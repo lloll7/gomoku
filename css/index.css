@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(247, 230, 183);
+  outline: 1px solid black;
+  margin: 50px auto;
+}
+.chess_board {
+  width: 92%;
+  height: 92%;
+  /* 设置表格的行列之间没有间隙 */
+  border-collapse: collapse;
+}
+.chess_board td {
+  border: 1px solid black;
+  position: relative;
+}
+
+/* 棋子的公共样式 */
+.chess {
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  width: 90%;
+  height: 90%;
+  color: lightgrey;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 白色棋子 */
+.white {
+  background-color: #fff;
+}
+/* 黑色棋子 */
+.black {
+  background-color: #000;
+}
+/* 获胜棋子 */
+.win {
+  border: 1px solid red;
+  box-shadow: 0 0 3px 2px red; /* 红色阴影 */
+}
